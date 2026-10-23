@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HSD Websites – Webdesigning für Privatpersonen</title>
-<meta name="description" content="Freiberuflicher Webentwickler in WEIBERN: moderne, schnelle Webseiten für Privatpersonen und kleine Projekte.">
+<title>HSD Websites – Webdesign für Privatpersonen</title>
+<meta name="description" content="Freiberuflicher Webentwickler in Weibern: moderne, schnelle Webseiten für Privatpersonen und kleine Projekte.">
 <meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="logo.png">
 <style>
   :root{
     --bg:#f6f5f1; --bg2:#ffffff; --fg:#0f1219; --muted:#5d6475; --line:rgba(15,18,25,.10);
@@ -28,8 +29,8 @@
   nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(14px);
     background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .logo{font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:18px}
-  .logo span{background:linear-gradient(120deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .logo{display:inline-flex;align-items:center;background:#0b0d12;border-radius:10px;padding:6px 14px;text-decoration:none}
+  .logo img{display:block;height:28px;width:auto}
   nav ul{display:flex;gap:26px;list-style:none;font-size:15px}
   nav ul a{text-decoration:none;color:var(--muted);transition:color .2s}
   nav ul a:hover{color:var(--fg)}
@@ -45,7 +46,8 @@
   .eyebrow i{width:7px;height:7px;border-radius:50%;background:#2fd27a;box-shadow:0 0 0 4px rgba(47,210,122,.18)}
   h1{font-size:clamp(38px,7.2vw,76px);line-height:1.04;letter-spacing:-.035em;margin:24px 0 22px;max-width:15ch}
   h1 em{font-style:normal;background:linear-gradient(120deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:52ch}
+  .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:60ch}
+  .lead strong{color:var(--fg)}
   .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:12px;font-weight:600;text-decoration:none;
     transition:transform .2s,box-shadow .2s}
@@ -53,6 +55,9 @@
   .btn.primary:hover{transform:translateY(-2px)}
   .btn.ghost{border:1px solid var(--line);background:var(--card)}
   .btn.ghost:hover{transform:translateY(-2px)}
+  .stats{display:flex;flex-wrap:wrap;gap:20px 44px;margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
+  .stats strong{display:block;font-size:30px;letter-spacing:-.02em;line-height:1.1}
+  .stats span{color:var(--muted);font-size:14.5px}
 
   /* Sections */
   section{padding:88px 0}
@@ -104,7 +109,7 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#top"><span>HSD-Websites</span></a>
+    <a class="logo" href="#top"><img src="logo.png" alt="HSD Websites" height="28"></a>
     <ul>
       <li><a href="#leistungen">Leistungen</a></li>
       <li><a href="#ablauf">Ablauf</a></li>
@@ -115,12 +120,18 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow"><i></i> Freiberuflich in WEIBERN</span>
+    <span class="eyebrow"><i></i> Freiberuflich in Weibern</span>
     <h1>Webseiten, die <em>einfach gut</em> aussehen.</h1>
-    <p class="lead">Ich gestalte und entwickle moderne, schnelle Webseiten für Privatpersonen und kleine Projekte – persönlich betreut, ohne Agentur-Umwege.</p>
+    <p class="lead"><strong>Deine Webseite, so wie du sie dir vorstellst – ohne Fachchinesisch und ohne Agentur-Aufwand.</strong> Seit über 3 Jahren gestalte und programmiere ich moderne, schnelle Webseiten, die auf dem Handy genauso überzeugen wie am PC. Du hast von Anfang bis Ende einen festen Ansprechpartner, bekommst vorab einen klaren Preis und eine Seite, die zu dir passt und nicht von der Stange kommt.</p>
     <div class="cta">
       <a class="btn primary" href="#kontakt">Projekt anfragen →</a>
       <a class="btn ghost" href="#leistungen">Leistungen ansehen</a>
+    </div>
+    <div class="stats">
+      <div><strong>3+ Jahre</strong><span>Erfahrung</span></div>
+      <div><strong>25+</strong><span>betreute Kunden</span></div>
+      <div><strong>5,0 ★</strong><span>Kundenbewertungen</span></div>
+      <div><strong>1</strong><span>fester Ansprechpartner</span></div>
     </div>
   </div>
 </header>
@@ -190,9 +201,9 @@
       <h2>Lass uns über dein Projekt sprechen</h2>
       <p class="sub">Schreib mir kurz, worum es geht – ich melde mich zeitnah mit einer Rückmeldung.</p>
       <div class="cta">
-        <a class="btn primary" href="mailto:hdemir0242[at]gmail.com">hdemir0242[at]gmail.com</a>
+        <a class="btn primary" href="mailto:hdemir0242@gmail.com">hdemir0242@gmail.com</a>
       </div>
-      <p class="meta">Raum WEIBERN · Termine auch persönlich vor Ort</p>
+      <p class="meta">Raum Weibern · Termine auch persönlich vor Ort</p>
     </div>
   </div>
 </section>
@@ -202,18 +213,18 @@
     <div class="cols">
       <div id="impressum">
         <h4>Impressum</h4>
-        HASAN SINAN DEMIR<br>
-        HAUPTSTRAßE 29<br>
+        Hasan Sinan Demir<br>
+        Hauptstraße 29<br>
         4675 Weibern<br>
         Österreich<br>
         E-Mail: hdemir0242[at]gmail.com
       </div>
       <div id="datenschutz">
         <h4>Datenschutz</h4>
-        Diese Seite setzt keine Cookies und nutzt keine Tracking- oder Analyse-Dienste. Beim Aufruf werden technisch bedingt Verbindungsdaten (z. B. IP-Adresse) durch den Hosting-Anbieter z. B. GitHub Pages verarbeitet. Wenn du mir schreibst, verwende ich deine Angaben nur zur Bearbeitung deiner Anfrage.
+        Diese Seite setzt keine Cookies und nutzt keine Tracking- oder Analyse-Dienste. Beim Aufruf werden technisch bedingt Verbindungsdaten (z. B. IP-Adresse) durch den Hosting-Anbieter GitHub Pages verarbeitet. Wenn du mir schreibst, verwende ich deine Angaben nur zur Bearbeitung deiner Anfrage.
       </div>
     </div>
-    <p style="margin-top:30px">© <span id="y"></span> HSD-WEBSITES</p>
+    <p style="margin-top:30px">© <span id="y"></span> HSD Websites</p>
   </div>
 </footer>
 
